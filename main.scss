@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+$mainFont: "Montserrat", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $mainFont;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  padding: 3vh 3vw;
+}
+
+.main {
+  width: 65vw;
+  height: 100%;
+  // background: red;
+  .weather {
+    &__now {
+      &--date {
+        color: rgb(9, 10, 72);
+        .city {
+          &--name {
+            font-size: 25px;
+          }
+        }
+      }
+      &--data {
+        color: rgb(0, 106, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 50px;
+        img {
+          height: 150px;
+        }
+      }
+    }
+    &__hourly {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      @media (max-width: 1400px) {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      @media (max-width: 980px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media (max-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      align-items: center;
+      background: rgb(230, 225, 225);
+      margin: 3vh 0;
+      padding: 15px 10px;
+      border-radius: 10px;
+    }
+    &__hour {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+.sections {
+  width: 35vw;
+  background: rgb(245, 243, 243);
+  margin: 3vh 1.8vw;
+  border-radius: 10px;
+}
+
