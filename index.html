@@ -13,8 +13,15 @@
     <div class="main">
       <div class="weather weather__now">
         <div class="weather weather__now--date">
-          <p class="city city--name bold"><span class="city city--choose">Toshkent</span> shahri</p>
-          <p class="weather weather--today">Seshanba, 20 - fevral</p>
+          <div class="col">
+            <p class="city city--name bold"><span class="city city--choose">Toshkent</span> shahri</p>
+            <p class="weather weather--today">Seshanba, 20 - fevral</p>
+          </div>
+          <div class="col">
+            <label for="check"><i class="fa-solid fa-bars"></i></label>
+            <label for="check" class="close"></label>
+            <input type="checkbox" id="check">
+          </div>
         </div>
         <div class="weather weather__now--data">
           <span class="now now--temperature"></span>
@@ -31,10 +38,62 @@
         </div> -->
       </div>
       <div class="weather weather__daily">
-
+        <div class="weather weather__daily--first">
+          <!-- <div class="weather weather__daily--date">
+            <span class="date__first">salom</span>
+            <span class="date__second">xayr</span>
+          </div> -->
+        </div>
+        <div class="weather weather__daily--second">
+        </div>
       </div>
     </div>
     <div class="sections">
+      <div class="section section__title">Hududlar</div>
+      <div class="section section__element" data-number="0">
+        <label for="city-0">Toshkent shahri</label>
+        <input type="radio" id="city-0" name="city" checked>
+      </div>
+      <div class="section section__element" data-number="1">
+        <label for="city-1">Andijon</label>
+        <input type="radio" id="city-1" name="city">
+      </div>
+      <div class="section section__element" data-number="2">
+        <label for="city-2">Namangan</label>
+        <input type="radio" id="city-2" name="city">
+      </div>
+      <div class="section section__element" data-number="3">
+        <label for="city-3">Sirdaryo</label>
+        <input type="radio" id="city-3" name="city">
+      </div>
+      <div class="section section__element" data-number="4">
+        <label for="city-4">Jizzax</label>
+        <input type="radio" id="city-4" name="city">
+      </div>
+      <div class="section section__element" data-number="5">
+        <label for="city-5">Qashqadaryo</label>
+        <input type="radio" id="city-5" name="city">
+      </div>
+      <div class="section section__element" data-number="6">
+        <label for="city-6">Xorazm</label>
+        <input type="radio" id="city-6" name="city">
+      </div>
+      <div class="section section__element" data-number="7">
+        <label for="city-7">Navoiy</label>
+        <input type="radio" id="city-7" name="city">
+      </div>
+      <div class="section section__element" data-number="8">
+        <label for="city-8">Buxoro</label>
+        <input type="radio" id="city-8" name="city">
+      </div>
+      <div class="section section__element" data-number="9">
+        <label for="city-9">Qoraqalpog'iston</label>
+        <input type="radio" id="city-9" name="city">
+      </div>
+      <div class="section section__element" data-number="10">
+        <label for="city-10">Farg'ona</label>
+        <input type="radio" id="city-10" name="city">
+      </div>
     </div>
   </main>
 </body>
